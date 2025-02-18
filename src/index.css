@@ -1,6 +1,10 @@
 /*task open sans import font family */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 
+/*task creo variabile CSS globale */
+:root {
+  --mainColor: #0282F9;
+}
 
 * {
   margin: 0;
@@ -53,18 +57,18 @@ header>nav>ul {
 }
 
 .active {
-  color: #0282F9;
-  /* box-shadow: #0282F9; */
-  box-shadow: 0 5px 2px -3px #0282F9;
+  color: var(--mainColor);
+  box-shadow: 0 5px 2px -3px var(--mainColor);
 
+  /* box-shadow: #0282F9; */
   /* border-bottom: 2px solid #0282F9; */
 }
 
 header>nav>ul>li>a:hover {
-  color: #0282F9;
+  color: var(--mainColor);
   /* padding-bottom: 10px;
   border-bottom: 2px solid #0282F9; */
-  box-shadow: 0 5px 2px -3px #0282F9;
+  box-shadow: 0 5px 2px -3px var(--mainColor);
 }
 
 
@@ -87,7 +91,7 @@ main+nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #0282F9;
+  background-color: var(--mainColor);
   padding-block: 1rem;
 }
 
@@ -103,7 +107,6 @@ footer {
   background-size: cover;
   font-size: small;
 }
-
 
 .footerLogo {
   background-image: url("./assets/img/dc-logo-bg.png");
@@ -144,7 +147,7 @@ div>ul>li>a {
 }
 
 .btn {
-  border: 1px solid #0282F9;
+  border: 1px solid var(--mainColor);
   padding: 7px;
 }
 
@@ -154,8 +157,14 @@ div>ul>li>a {
 
 .contacts ul {
   display: flex;
+  gap: 2px;
+}
+
+.contacts>ul>li>a:hover {
+  scale: 1.2;
+  filter: brightness(0);
 }
 
 .blue {
-  color: #0282F9;
+  color: var(--mainColor);
 }
