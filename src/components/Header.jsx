@@ -7,7 +7,7 @@ const Header = () => {
             </figure>
 
             <nav>
-                <ul className="uppercase flex">
+                <ul>
                     <li><a href="#">Characters</a></li>
                     <li><a href="#" >comics</a></li>
                     <li><a href="#">Movies</a></li>
@@ -20,10 +20,6 @@ const Header = () => {
                     <li><a href="#">shop</a></li>
                 </ul>
             </nav>
-
-
-
-
         </header>
     )
 }
