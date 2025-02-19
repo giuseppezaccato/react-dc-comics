@@ -10,15 +10,17 @@ const Main = () => {
     return (
         <>
             <main >
-                <h1>  contenuto fumetti qui </h1>
+                <div className="container">
+                    <h1>  contenuto fumetti qui </h1>
+                </div>
             </main>
             <nav>
                 <ul className="container">
-                    <li><a href="#"> <img src={comics} alt="comics" /></a><div>digital comics</div></li>
-                    <li><a href="#"> <img src={merch} alt="merch" /></a><div>dc merchandise</div></li>
-                    <li><a href="#"> <img src={shop} alt="shop" /></a><div>subscriptions</div></li>
-                    <li><a href="#"> <img src={sub} alt="sub" /></a><div>comic shop locator</div></li>
-                    <li><a href="#"> <img src={buy} alt="buy" /></a><div>dc power visa</div></li>
+                    <li><a href="#"> <img src={comics} alt="comics" /></a><p>digital comics</p></li>
+                    <li><a href="#"> <img src={merch} alt="merch" /></a><p>dc merchandise</p></li>
+                    <li><a href="#"> <img src={shop} alt="shop" /></a><p>subscriptions</p></li>
+                    <li><a href="#"> <img src={sub} alt="sub" /></a><p>comic shop locator</p></li>
+                    <li><a href="#"> <img src={buy} alt="buy" /></a><p>dc power visa</p></li>
                 </ul>
             </nav>
         </>

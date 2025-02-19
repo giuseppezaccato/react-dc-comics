@@ -1,4 +1,6 @@
-const Header = () => {
+import NavBar from "./NavBar"
+
+const Header = (headerProps) => {
     return (
         <header className="container ">
 
@@ -8,6 +10,15 @@ const Header = () => {
                 </a>
             </figure>
 
+            <NavBar headerLinks={headerProps.appLinks} />
+
+        </header>
+    )
+}
+
+
+//task sostituisco dinamicamente con <NavBar /> il contenuto statico sottostante
+{/*             
             <nav>
                 <ul>
                     <li><a href="#">Characters</a></li>
@@ -21,9 +32,6 @@ const Header = () => {
                     <li><a href="#">news</a></li>
                     <li><a href="#">shop</a></li>
                 </ul>
-            </nav>
-        </header>
-    )
-}
+            </nav> */}
 
 export default Header

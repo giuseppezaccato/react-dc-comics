@@ -4,6 +4,8 @@ import pint from "../assets/img/footer-pinterest.png"
 import tw from "../assets/img/footer-twitter.png"
 import yt from "../assets/img/footer-youtube.png"
 
+
+
 const Footer = () => {
 
     return (

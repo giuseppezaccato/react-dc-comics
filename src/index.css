@@ -10,6 +10,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -45,7 +48,7 @@ header {
   align-items: center;
 }
 
-figure>img {
+figure img {
   width: 4rem;
 }
 
@@ -54,6 +57,7 @@ header>nav>ul {
   gap: 15px;
   font-size: small;
   font-weight: 600;
+  line-height: 20px;
 }
 
 .active {
@@ -73,6 +77,7 @@ header>nav>ul>li>a:hover {
 
 
 /** ------------Main------------- */
+
 main {
   background-color: black;
   color: white;
@@ -152,7 +157,7 @@ div>ul>li>a {
 }
 
 .contacts img {
-  width: 2rem;
+  width: 24px;
 }
 
 .contacts ul {
