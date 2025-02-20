@@ -48,8 +48,9 @@ header {
   align-items: center;
 }
 
-figure>img {
-  width: 300px;
+header img,
+main+nav img {
+  width: 3rem;
 }
 
 header>nav>ul {
@@ -86,15 +87,33 @@ main {
 }
 
 .jumbotron {
-  height: 45vh;
+  height: 55vh;
   background-image: url("./assets/img/jumbotron.jpg");
   background-size: cover;
 }
 
-header img,
-main+nav img {
-  width: 3rem;
+.comicShelf {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-block: 3rem;
 }
+
+.card {
+  flex-basis: calc(100% / 6 - 1rem);
+}
+
+figure>img {
+  width: 190px;
+  height: 300px;
+  object-fit: cover;
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
 
 main+nav {
   font-size: small;

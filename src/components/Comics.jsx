@@ -7,13 +7,14 @@ const Comics = (comicsProps) => {
     return (
 
 
-        <div >{
+        <div className="comicShelf" >{
 
             mainComics.map(comic => {
 
+                //* destructuring
                 const { id, title, thumb, price } = comic
 
-                // task qui si dovrebbe trovare la card contenente tutto il fumetto
+                // task card contenente il fumetto
                 return (
                     <div key={id} className="card" >
                         <figure >
