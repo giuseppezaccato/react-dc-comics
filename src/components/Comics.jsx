@@ -20,14 +20,16 @@ const Comics = (comicsProps) => {
                         <figure >
                             <img src={thumb} alt={title} />
                         </figure>
-                        <h6>{title}</h6>
+                        <h4>{title}</h4>
                         <p>{price}</p>
                     </div >
                 )
 
             }
             )
+
         }
+
         </div >
 
     )

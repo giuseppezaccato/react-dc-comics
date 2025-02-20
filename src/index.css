@@ -82,8 +82,8 @@ header>nav>ul>li>a:hover {
 main {
   background-color: black;
   color: white;
-  /* height: 20vh; */
-  /* text-align: center; */
+  padding-block: 2rem;
+
 }
 
 .jumbotron {
@@ -92,9 +92,19 @@ main {
   background-size: cover;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  bottom: -1rem;
+  left: 5rem;
+}
+
 .comicShelf {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
   flex-wrap: wrap;
   padding-block: 3rem;
@@ -110,10 +120,28 @@ figure>img {
   object-fit: cover;
 }
 
-h6 {
+h4 {
   text-transform: uppercase;
 }
 
+.comicBtn {
+  text-transform: uppercase;
+  border: 1px solid var(--mainColor);
+  padding: 8px;
+  background-color: var(--mainColor);
+}
+
+.jself {
+  justify-self: center;
+}
+
+.comicBtn a {
+  color: white;
+}
+
+.comicBtn a:hover {
+  color: black;
+}
 
 main+nav {
   font-size: small;
@@ -123,6 +151,10 @@ main+nav {
   align-items: center;
   background-color: var(--mainColor);
   padding-block: 1rem;
+}
+
+main+nav ul li a:hover {
+  scale: 1.5;
 }
 
 nav>ul {
@@ -181,6 +213,10 @@ div>ul>li>a {
   padding: 7px;
 }
 
+.btn :hover {
+  color: var(--mainColor);
+}
+
 .contacts img {
   width: 24px;
 }
@@ -189,6 +225,7 @@ div>ul>li>a {
   display: flex;
   gap: 2px;
 }
+
 
 .contacts>ul>li>a:hover {
   scale: 1.2;

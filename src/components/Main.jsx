@@ -15,7 +15,9 @@ const Main = (mainProps) => {
 
             <main >
 
-                <div className="jumbotron"> </div>
+                <div className="jumbotron relative">
+                    <div className="comicBtn absolute">current series</div>
+                </div>
 
                 <div className="container bg-black ">
 
@@ -23,6 +25,8 @@ const Main = (mainProps) => {
                     <Comics mainComics={mainProps.appComics} />
 
                 </div>
+
+                <div div className="comicBtn jself "><a href="#">Load More</a>  </div>
 
             </main>
 
