@@ -5,15 +5,27 @@ import shop from "../assets/img/buy-comics-shop-locator.png"
 import sub from "../assets/img/buy-comics-subscriptions.png"
 import buy from "../assets/img/buy-dc-power-visa.svg"
 
-const Main = () => {
+//task import component
+import Comics from "./Comics"
+
+const Main = (mainProps) => {
 
     return (
         <>
+
             <main >
-                <div className="container">
-                    <h1>  contenuto fumetti qui </h1>
+
+                <div className="jumbotron"> </div>
+
+                <div className="container bg-black ">
+
+                    {/* da qui mi aspetto adesso la lista iterata col map di tutti i fumetti */}
+                    <Comics mainComics={mainProps.appComics} />
+
                 </div>
+
             </main>
+
             <nav>
                 <ul className="container">
                     <li><a href="#"> <img src={comics} alt="comics" /></a><p>digital comics</p></li>

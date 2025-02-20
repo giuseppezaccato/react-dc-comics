@@ -48,8 +48,8 @@ header {
   align-items: center;
 }
 
-figure img {
-  width: 4rem;
+figure>img {
+  width: 300px;
 }
 
 header>nav>ul {
@@ -81,12 +81,18 @@ header>nav>ul>li>a:hover {
 main {
   background-color: black;
   color: white;
-  height: 20vh;
-  text-align: center;
-  padding-block: 20px;
+  /* height: 20vh; */
+  /* text-align: center; */
 }
 
-img {
+.jumbotron {
+  height: 45vh;
+  background-image: url("./assets/img/jumbotron.jpg");
+  background-size: cover;
+}
+
+header img,
+main+nav img {
   width: 3rem;
 }
 
